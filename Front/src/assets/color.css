@@ -1,0 +1,86 @@
+:root {
+
+    --color-global: #0080F2;
+    --color-global-0:#bfdbf4;
+    --color-global-1:#015eb0;
+    --color-global-2:#ffec5b;
+    --color-global-3:#f4f4f4;
+    --color-global-4:#fff;
+    --color-global-5:rgba(0, 0, 0, 0.1);
+    --color-global-6:#0080F2;
+    --color-global-7:#0080F2;
+    --color-global-8:#ffec5b;
+
+    --background-color-reloj: var(--color-global-2);
+
+    --text-color: var(--color-global);
+
+    --number-bg-color: var(--color-global-0);
+    --number-text-color: var(--color-global-1);
+
+    --bg-color-rectangle:rgba(255, 255, 255, 0.938);
+    --box-shadow-rectangle:0 0 5px var(--color-global-5);
+    
+    --hotnumber-color:  var(--color-global-1);
+    --hotnumber-bg-color: var(--color-global-4);
+    --hotnumnber-border-color: 1px solid var(--color-global-1);
+    --hotnumber-circle-info-bg-color:var(--color-global-0);
+    --hotnumber-text-inside:var(--color-global-7);
+
+    --navbar-text-color:var(--color-global);
+    --navbar-bg-color:var(--color-global-3);
+    --navbar--shadowdown:0px 4px 4px rgba(0, 0, 0, 0.4);
+    --navbar-hover-bg-color: var(--color-global-2); 
+    --navbar-hover-text-color:var(--color-global-7);
+    --navbar-box-shadow-color:0px 10px 24px -7px var(--color-global-5);
+
+    --selectname-text-color:var(--color-global);
+
+    --selectDate-background-color: var(--color-global-3);
+    --selectDate-text-color: var(--color-global);
+    --selectDate-border:0.5px solid var(--color-global-6);
+
+
+    --selectLotery-background-color: var(--color-global-3);
+    --selectLotery-border: 0.25px solid var(--color-global-6);
+    --selectLotery-text-color: var(--color-global);
+
+
+    --Timer-background-color-timer:var(--color-global-2);
+    --Timer-border-radius-timer: 10px;
+    --Timer-padding-timer: 2px;
+    --Timer-color-timer: var(--color-global);
+    --Timer-font-weight-timer: bold;
+    --Timer-font-size-timer: 15px;
+    --Timer-margin-timer: 3px;
+
+    --bg-color-validation:var(--color-global-8);
+
+    --eresganador-bg-validticket:var(--color-global-8);
+    --eresganador-bg-inside-validticket:var(--color-global-8);
+    --eresganador-bg-inside-validticket-box-shadow:3px 3px 5px 0px rgba(8, 161, 131, 0.7), 5px 5px 20px 0px rgba(0, 86, 67, 0.7);
+    --texto:var(--color-global-7);
+    --detail-eresganador:var(--color-global-6);
+    --bg-card:var(--color-global-4);
+
+    --box-shadow-erescomo:var(--color-global-5);
+  }
+
+
+    /* color: #ffffff; 
+    #b4e7dd
+    #005643
+
+
+        --color-global: #0080F2;
+    --color-global-0:#bfdbf4;
+    --color-global-1:#015eb0;
+    --color-global-2:#feea99;
+    --color-global-3:#FFCC00;
+    --color-global-4:#fff;
+    --color-global-5:rgba(0, 0, 0, 0.1);
+    --color-global-6:#0d473b;
+    --color-global-7:#000000;
+    --color-global-8:#d1efe9;
+
+    */
