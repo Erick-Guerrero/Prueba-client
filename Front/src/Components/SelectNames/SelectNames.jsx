@@ -1,7 +1,7 @@
 import { Select } from 'flowbite-react';
 import { useDispatch, useSelector } from 'react-redux';
 import React, { useEffect, useState } from 'react';
-import "../SelectNames/SelectNames.css";
+import "./SelectNames.css";
 import { fechaSelecionada, getAllNumbers, getNameLottery } from '../Redux/Actions';
 import { dataName } from '../Constantes/Constantes';
 
