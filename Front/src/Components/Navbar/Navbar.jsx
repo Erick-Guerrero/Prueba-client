@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import './Navbar.css';
+import '../Navbar/Navbar.css';
 import SelectDate from '../SelectDate/SelectDate';
 import SelectNames from '../SelectNames/SelectNames';
 import '../../assets/color.css'

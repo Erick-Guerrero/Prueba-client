@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import "./DisplayNumbers.css";
+import "../DisplayNumbers/DisplayNumbers.css";
 import { getAllNumbers, getHotNumbers } from "../Redux/Actions";
 import Timer from "../Timer/Timer";
 import HotNumbers from "../HotNumbers/HotNumbers";
