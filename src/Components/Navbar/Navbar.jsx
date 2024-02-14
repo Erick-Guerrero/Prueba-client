@@ -5,7 +5,9 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import '../Navbar/Navbar.css';
 import SelectDate from '../SelectDate/SelectDate';
 import SelectNames from '../SelectNames/SelectNames';
-import '../../assets/color.css'
+import '../../assets/color.css';
+import Reloj from "../ActualHr/actualHr"
+import logo2 from "./logo2.png"
 
 const navigation = [
   { name: 'Como jugar', to: '/comojugar', current: false },
@@ -43,8 +45,14 @@ export default function Navbar() {
                 className="sm:hidden flex items-center justify-center w-full"
                 style={{ width: '100%', justifyContent: 'center' }}
               >
+
+
+                
                 <div className="logo">
-                  <Link to="/">Logo</Link>
+                  <Link to="/">
+                  <img src={logo2} alt="Logo" width="100" height="100"/>
+                  </Link>
+                  <Reloj/>
                 </div>
               </div>
             </div>
@@ -54,7 +62,10 @@ export default function Navbar() {
                 style={{ width: '418px', justifyContent: 'center' }}
               >
                 <div className="logo">
-                  <Link to="/">Logo</Link>
+                <Link to="/">
+                  <img src={logo2} alt="Logo" width="100" height="100"/>
+                  </Link>
+                  <Reloj/>
                 </div>
               </div>
               <div className="hidden sm:ml-6 sm:flex justify-center">

@@ -7,13 +7,17 @@
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font: bold;
-    font-family: serif;
-    font-size: 1.125rem;
-  }
+  display: flex;
+  flex-direction: row; /* Cambiado de 'column' a 'row' */
+  justify-content: center;
+  align-items: center;
+  font: bold;
+  font-family: serif;
+  font-size: 1.125rem;
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 15px;
+}
 
   .logo-customBack {
     color: #008000;
@@ -30,6 +34,19 @@
     flex-direction: row;
     margin-right: 10px;
     margin-top: 8px;
+  }
+
+  .reloj {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    align-items: center;
+    width: 100%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: var(--background-color-reloj);
+    color: var(--text-color);
   }
   
   @media (max-width: 639px) {
