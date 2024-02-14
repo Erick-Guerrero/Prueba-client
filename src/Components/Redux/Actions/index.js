@@ -8,9 +8,7 @@ export const CLEAN_UP_DATA_IN_CHECK = 'CLEAN_UP_DATA_IN_CHECK';
 
 //const app = "http://localhost:3001"
 
-//const app ="https://erick-guerrero-back-production.up.railway.app"
-
-const app ="https://back-production-3b46.up.railway.app"
+const app ="https://erick-guerrero-back-production.up.railway.app"
 
 export const getAllNumbers = (date) => {
   return async (dispatch) => {
