@@ -1,0 +1,116 @@
+@import '../../assets/color.css';
+
+.contenedorglobal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh; /* Establecer una altura mínima igual a la altura de la ventana */
+}
+
+.containerprincipal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 90%;
+}
+.columnas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+}
+
+.quiniela-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Divide en dos columnas de ancho igual */
+  gap: 20px; /* Espacio entre las columnas */
+}
+
+.quiniela-info1 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Divide en dos columnas de ancho igual */
+  gap: 20px; /* Espacio entre las columnas */
+}
+
+.titlesJugar {
+  color: var(--detail-eresganador);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.h4Col{
+  color: var(--detail-eresganador);
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.titlesJugar1 {
+  color: var(--detail-eresganador);
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--bg-color-validation);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.section {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--box-shadow-erescomo);
+  background-color: var(--bg-card);
+}
+
+.sectionPremios{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--box-shadow-erescomo);
+  background-color: var(--bg-card);
+}
+
+.section h2,
+.section h3 {
+  background-color: var(--bg-color-validation);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section li:before {
+  
+  margin-right: 5px;
+}
+
+
+@media (max-width: 639px) {
+  .quiniela-info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Divide en dos columnas de ancho igual */
+    gap: 20px; /* Espacio entre las columnas */
+  }
+  .columnas {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+}

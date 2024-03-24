@@ -1,0 +1,334 @@
+@import url('https://fonts.cdnfonts.com/css/plexus-sans');
+@import '../../assets/color.css';
+
+.fontHot {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.loading {
+  text-align: center;
+  width: 100%;
+  padding-top: 50px; /* Margen superior para separar del borde superior */
+  height: 100px; /* Altura más grande */
+  display: flex; /* Para centrar verticalmente */
+  justify-content: center; /* Para centrar horizontalmente */
+  align-items: center; /* Para centrar verticalmente */
+}
+
+.reloj {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  align-items: center;
+  width: 100%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  background-color: var(--background-color-reloj);
+  color: var(--text-color);
+}
+
+.timerContainer {
+  display: flex;
+  align-items: center; /* Centra verticalmente el temporizador */
+}
+
+.timer {
+  text-align: center;
+  background-color: var(--Timer-background-color-timer);
+  border-radius: var(--Timer-border-radius-timer);
+  padding: var(--Timer-padding-timer);
+  color: var(--Timer-color-timer);
+  font-weight: var(--Timer-font-weight-timer);
+}
+
+
+.containerHotNumbers {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  align-items: center;
+  text-align: center;
+ 
+
+}
+
+.numberContainerRow {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.numberWithFire {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+
+.fireIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  /* Ajusta el tamaño de la imagen de fuego según tus necesidades */
+  height: 85px;
+  /* Ajusta el tamaño de la imagen de fuego según tus necesidades */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mainContainer {
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+}
+
+.square-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Dos columnas con tamaño igual */
+  gap: 20px;
+  margin-top: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+
+
+/* Estilo para el cuadrado en sí */
+.square {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Dos columnas con tamaño igual */
+  gap: 20px;
+  /* Espacio entre los cuadrados */
+  width: 300px;
+  height: 300px;
+  margin-top: 30px;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rectangle {
+  display: flex;
+  justify-content: space-between;
+  /* Espacio entre los elementos en fila */
+  background-color: var(--bg-color-rectangle);
+  box-shadow: var(--box-shadow-rectangle);
+  width: 600px;
+  height: 170px;
+
+
+  border-radius: 10px;
+  padding: 35px;
+  text-align: left;
+  margin: 3px;
+  /* Espacio entre los rectángulos */
+  align-items: center;
+  /* Centra verticalmente */
+}
+
+.fechaContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.loteryName {
+  font-size: 17px;
+  font-family: 'Plexus Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.img {
+  width: 150px;
+  height: 80px;
+}
+
+.hidden {
+  display: none;
+}
+
+.NumbersContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  /* Columna para números y tiempo */
+  align-items: flex-end;
+  margin-top: 0px;
+  height: 128px;
+  /* Alinea a la derecha */
+}
+
+
+.dateContainer {
+  display: flex;
+  align-items: center;
+  /* Alinea en la parte superior */
+  gap: 20px;
+}
+
+.date {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--text-color);
+}
+
+.time {
+  font-family: 'Plexus Sans', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+}
+
+.numberRow {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.number {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--number-bg-color);
+  color: var(--number-text-color);
+  margin: 3px;
+  padding: 10px;
+  border-radius: 40px;
+  width: 70px;
+  height: 70px;
+}
+
+
+
+@media (max-width: 639px) {
+  .square-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* Dos columnas con tamaño igual */
+    gap: 10px;
+    margin-top: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .numberContainerRow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Dos columnas con tamaño igual */
+    gap: 20px;
+    margin-top: 5px;
+    justify-items: center;
+    align-items: center;
+  }
+
+
+  .rectangle {
+    box-shadow: var(--box-shadow-rectangle);
+    background-color: var(--bg-color-rectangle);
+    width: 350px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .img {
+    width: 100px;
+    height: 50px;
+  }
+
+  .numberRow {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2px;
+  }
+
+  .number {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    padding: 10px;
+    border-radius: 40px;
+    box-shadow: 3px 8px 11px -7px black, 3px 8px 15px -3px rgba(0, 0, 0, 0.1);
+    width: 55px;
+    height: 55px;
+  }
+
+}
+
+.pulsating-circle {
+  position: relative;
+  width: 80px;
+  /* Tamaño del círculo principal */
+  height: 80px;
+  /* Tamaño del círculo principal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+
+.pulsating-circle:after {
+  content: '';
+  position: absolute;
+  width: 120px;
+  /* Tamaño del círculo exterior */
+  height: 120px;
+  /* Tamaño del círculo exterior */
+  border-radius: 50%;
+  animation: pulse-ring 2.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  top: -20px;
+  /* Ajusta para posicionar el círculo exterior por fuera */
+  left: -20px;
+  /* Ajusta para posicionar el círculo exterior por fuera */
+}
+
+
+
+
+.pulsating-circle p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.33);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
