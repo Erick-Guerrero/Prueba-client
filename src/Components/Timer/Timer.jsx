@@ -8,7 +8,7 @@ function Timer({ expiryTime, onTimerExpired,fechaSeleccionada }) {
     const today = new Date();
   
     // Sumar 15 minutos en milisegundos (15 minutos * 60 segundos * 1000 milisegundos)
-    const fifteenMinutes = 7 * 60 * 1000;
+    const fifteenMinutes = 1 * 60 * 1000;
     const expiryWith15Minutes = expiryTime + fifteenMinutes;
   
     const remaining = Math.max(0, expiryWith15Minutes - today.getTime());

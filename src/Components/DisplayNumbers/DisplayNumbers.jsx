@@ -61,24 +61,22 @@ function DisplayNumbers() {
   }
 
   function calculateExpiryTimestamp(timeString) {
-
     const zonaHorariaCliente = obtenerZonaHorariaCliente();
     // Convertir la hora original a la zona horaria del cliente
     const horaCliente = moment.tz(timeString, 'HH:mm', 'America/Santo_Domingo').tz(zonaHorariaCliente);
-
+  
     if (!horaCliente.isValid()) {
       return null; // Devuelve null si la hora no es válida
     }
-
-        // Convertir la hora a minutos
-        const totalMinutes = horaCliente.hour() * 60 + horaCliente.minute();
-
-    // Si la hora ya pasó, avanzar un día
-    if (totalMinutes > 1425) {
-      // Configurar el temporizador para que expire en 10 minutos
+  
+    // Obtener la hora actual del cliente
+    const horaActualCliente = moment().tz(zonaHorariaCliente);
+  
+    // Si la hora ya pasó, configurar el temporizador para que expire en 10 minutos
+    if (horaCliente.isBefore(horaActualCliente)) {
       return moment().add(10, 'minutes').valueOf();
-  }
-
+    }
+  
     // Devuelve el tiempo de expiración en milisegundos
     return horaCliente.valueOf();
   }
